@@ -1,0 +1,32 @@
+for ubuntu 14.04
+Steps to install Composer in ubuntu
+
+Step - 1: Check is curl installed or not.
+
+If yes please ignore this step, else first install curl.
+
+As per your PHP version install curl
+
+PHP 5
+
+sudo apt-get install php5-curl
+sudo service apache2 restart
+
+PHP 5.6
+
+sudo apt-get install php5.6-curl
+sudo service apache2 restart
+
+PHP 7.0
+
+sudo apt-get install php7.0-curl
+sudo service apache2 restart
+
+Step - 2: Install Composer with the following command
+
+sudo apt-get update
+curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
+
+After successful install run following command in terminal to verify is composer successfully installed.
+
+ composer
